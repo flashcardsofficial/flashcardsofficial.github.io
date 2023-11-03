@@ -38,7 +38,7 @@ function flipCard() {
 }
 
 function updateCard() {
-  if (localStorage.length - 2 < i + 1) {
+  if (localStorage.length < i + 1) {
     localStorage.setItem("wrong", wrong);
     localStorage.setItem("correct", correct);
     window.location.href = "score.html";
