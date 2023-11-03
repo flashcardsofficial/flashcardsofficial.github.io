@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: #f6f4eb;
+  font-family: Helvetica, sans-serif;
+  color: rgb(211, 211, 211);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 0em;
+}
+
+p {
+  color: #3a3a3a;
+  font-style: bold;
+  font-size: 2em;
+  margin: 20px;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  text-align: center;
+  max-width: 100px;
+  margin-left: 40%;
+  height: 50px;
+  padding: 15px;
+  background-color: #d7d6d0;
+  color: rgb(31, 31, 31);
+  border-radius: 5px;
+}

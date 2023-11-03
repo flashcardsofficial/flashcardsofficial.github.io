@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: #f6f4eb;
+  font-family: Helvetica, sans-serif;
+  color: rgb(211, 211, 211);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0em;
+}
+
+.container {
+  width: 30em;
+  height: 18em;
+  perspective: 800px;
+}
+@media (max-width: 525px) {
+  .container {
+    width: 16em;
+    margin-left: 45px; /* Adjust the height for smaller screens as needed */
+  }
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #3a3a3a;
+  overflow: hidden;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+button {
+  text-align: center;
+  max-width: 100px;
+  padding: 15px 30px;
+  margin: 10px 50px;
+  background-color: #f6f4eb;
+  color: rgb(31, 31, 31);
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  width: 85%;
+  padding: 15px;
+  margin: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+p {
+  color: #3a3a3a;
+  font-style: bold;
+  font-size: 2em;
+  margin: 20px;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+}

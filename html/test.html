@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/test.css" />
+    <title>Flip Card</title>
+  </head>
+  <body>
+    <div class="score">
+      <p id="correct-element">Correct: 0</p>
+      <p id="wrong-element">Wrong: 0</p>
+    </div>
+    <div class="container" id="flashcard-container">
+      <div class="card" id="flashcard">
+        <div class="front">
+          <h2 id="question">Question</h2>
+          <h5 id="hint">Hint</h5>
+          <input
+            id="answer-input"
+            type="text"
+            placeholder="Enter Answer"
+            maxlength="150"
+          />
+          <button onclick="flipCard()">Flip</button>
+        </div>
+        <div class="back">
+          <h2 id="answer">Answer</h2>
+          <button onclick="updateCard()">Next</button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/test.js"></script>
+  </body>
+</html>
